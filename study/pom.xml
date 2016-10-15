@@ -29,6 +29,10 @@
             <groupId>javassist</groupId>
             <artifactId>javassist</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>cn.memedai</groupId>
+            <artifactId>common-toolkit</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

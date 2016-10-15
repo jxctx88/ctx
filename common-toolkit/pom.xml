@@ -19,7 +19,7 @@
   </properties>
 
   <dependencies>
-   <!-- <dependency>
+  <!-- <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
      &lt;!&ndash; <scope>test</scope>&ndash;&gt;
@@ -65,10 +65,10 @@
       </dependency>
 
       <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
-      <dependency>
+      <!--<dependency>
           <groupId>ch.qos.logback</groupId>
           <artifactId>logback-classic</artifactId>
-      </dependency>
+      </dependency>-->
       <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
       <dependency>
           <groupId>ch.qos.logback</groupId>
@@ -81,7 +81,19 @@
           <artifactId>netty-all</artifactId>
       </dependency>
 
+     <!-- <dependency>
+          <groupId>cn.memedai</groupId>
+          <artifactId>mvn-rep-test</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+      </dependency>-->
   </dependencies>
+  <!--
+      <repositories>
+          <repository>
+              <id>maven</id>
+              <url>https://raw.githubusercontent.com/jxctx88/maven/snapshot</url>
+          </repository>
+      </repositories>-->
   
   
   <build>

@@ -12,6 +12,7 @@ public class DiscardClientHandler extends ChannelHandlerAdapter {
 
    // @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("heehh");
         ByteBuf buf = ctx.alloc().buffer().writeBytes("hello netty server".getBytes("UTF-8"));
         ctx.writeAndFlush(buf);
     }

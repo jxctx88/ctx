@@ -16,14 +16,14 @@ public class DiscardClient {
 
     public static void main(String[] args) throws Exception {
         String host = "localhost";
-        int port = 8999;
+        int port = 8080;
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
             Bootstrap b = new Bootstrap(); // (1)
             b.group(workerGroup); // (2)
             b.channel(NioSocketChannel.class); // (3)
-            b.option(ChannelOption.SO_KEEPALIVE, true); // (4)
+            b.option(ChannelOption.TCP_NODELAY, true); // (4)
             b.handler(new ChannelInitializer<SocketChannel>() {
                 @Override
                 public void initChannel(SocketChannel ch) throws Exception {

@@ -11,7 +11,7 @@ import java.nio.ByteBuffer;
  */
 public class DiscardServerHandler extends ChannelHandlerAdapter {
 
-    @Override
+    //@Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         ByteBuf buf = (ByteBuf)msg;
         while (buf.isReadable()) { // (1)
@@ -23,7 +23,7 @@ public class DiscardServerHandler extends ChannelHandlerAdapter {
         ctx.writeAndFlush(respBuf);
     }
 
-    @Override
+    //@Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
        ctx.close();
     }
