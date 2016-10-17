@@ -34,10 +34,10 @@
       <artifactId>spring-webmvc</artifactId>
     </dependency>
 	<!-- 多线程测试工具 Begin -->
-	<dependency>
+	<!-- <dependency>
 		<groupId>fakepath</groupId>
 		<artifactId>groboutils-core</artifactId>
-	</dependency>
+	</dependency> -->
 	<!-- 多线程测试工具 End -->
 	<dependency>
 	    <groupId>org.springframework.data</groupId>
