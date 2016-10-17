@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/cache
+        http://www.springframework.org/schema/cache/spring-cache-3.2.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+    	      
+    	<bean id="userManager" class="cn.memedai.springSource.propertyEditor.UserManager">
+    		<property name="dataValue">
+    			<value>2016-09-01</value>
+    		</property>
+    	</bean> 
+    	                                   
+    	 <!-- 自定义属性编辑器 -->
+    	<!-- <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+    		<property name="customEditors">
+    			<map>
+    				<entry key="java.util.Date">
+    					<bean class="cn.memedai.springSource.propertyEditor.DateProperytEditor">
+    						<property name="format" value="yyyy-MM-dd"/>
+    					</bean>
+    				</entry>
+    			</map>
+    		</property>
+    	</bean> -->
+    	
+    	
+    	<!-- 使用spring自带的CustomDateEditor -->
+    	<!-- <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+    		<property name="propertyEditorRegistrars">
+    			<list>
+    				<bean class="cn.memedai.springSource.propertyEditor.DatePropertyEditorRegistrar"></bean>
+    			</list>
+    		</property>
+    	</bean> -->
+</beans>

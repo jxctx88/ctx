@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/cache
+        http://www.springframework.org/schema/cache/spring-cache-3.2.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+    	                                   
+    	<!-- <context:component-scan base-package="cn.memedai.springSource"/> -->
+    	<bean id="user" class="cn.memedai.springSource.impl.UserImpl" init-method="init">
+    		<constructor-arg index="0" value="xiong" />
+    		<constructor-arg index="1" value="28" />
+    		<property name="nickname" value="xiaobu"/>
+    		<property name="sex" value="man"/>
+    	</bean>
+    	<!-- 
+    	<bean id="testAware" class="cn.memedai.springSource.aware.TestBeanNameAware">
+    		<constructor-arg ></constructor-arg>
+    		<property name="msg" > <ref/> </property>
+    		<property name="msg">
+    			<list>
+    				<value>1</value>
+    				<value>2</value>
+    			</list>
+    			<set>
+    				<value>1</value>
+    				<value>2</value>
+    			</set>
+    			<array><value></value></array>
+    			<map>
+    				<entry key="name" value="xiong"></entry>
+    				<entry key="age" value="26"></entry>
+    			</map>
+    			<props>
+    				<prop key="name">xiong</prop>
+    				<prop key="age">26</prop>
+    			</props>
+    		</property>
+    	</bean> -->
+    	
+    	<!-- <import resource="classpath:dubbo-consumer.xml"/> -->
+    	
+</beans>
