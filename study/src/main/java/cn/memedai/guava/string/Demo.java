@@ -39,6 +39,9 @@ public class Demo {
 	
 	/**
 	 * 拆分器
+	 * omitEmptyStrings() 从结果中自动忽略空字符串
+	 * trimResults() 移除结果字符串的前导空白和尾部空白
+	 * limit(int) 限制拆分出的字符串数量
 	 */
 	public static void testSplitter(){
 		Iterable<String> iterable = Splitter.on(',').trimResults().omitEmptyStrings().limit(2)
