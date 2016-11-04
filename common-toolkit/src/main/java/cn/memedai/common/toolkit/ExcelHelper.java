@@ -128,7 +128,6 @@ public final class ExcelHelper {
         // 生成一个字体
         Font headerFont = wb.createFont();
         headerFont.setColor(IndexedColors.WHITE.index);
-        //headerFont.setBoldweight(Font.BOLDWEIGHT_BOLD);
         headerFont.setBold(Boolean.TRUE);//加粗
         // 把字体应用到当前的样式
         headerStyle.setFont(headerFont);

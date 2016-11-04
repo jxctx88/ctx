@@ -23,6 +23,8 @@ public class FileUtilsDemo {
 		System.out.println(1);
 		fos.write((IOUtils.LINE_SEPARATOR+"hello world").getBytes(Charset.forName("UTF-8")));
 		//fos.close();
+		
+		//FileUtils.touch(new File("d:/111/test"));
 	}
 
 }

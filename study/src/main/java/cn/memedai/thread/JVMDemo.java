@@ -1,5 +1,7 @@
 package cn.memedai.thread;
 
+import cn.memedai.test.hemcrest.Demo;
+
 public class JVMDemo {
 
 	/**
@@ -12,7 +14,8 @@ public class JVMDemo {
 			System.out.println("hello world");
 			Thread.sleep(1000);
  		}
-
+		
 	}
+	
 
 }
