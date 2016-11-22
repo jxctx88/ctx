@@ -18,6 +18,10 @@
     </properties>
 
     <dependencies>
+    	<dependency>
+		    <groupId>org.reflections</groupId>
+		    <artifactId>reflections</artifactId>
+		</dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -250,6 +254,12 @@
 		    <groupId>io.netty</groupId>
 		    <artifactId>netty-all</artifactId>
 		    <version>5.0.0.Alpha1</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>cn.memedai</groupId>
+		  <artifactId>ups-facade</artifactId>
+		  <version>1.0-SNAPSHOT</version>
 		</dependency>
     </dependencies>
 </project>
