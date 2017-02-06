@@ -20,8 +20,8 @@ public class Demo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//testJoiner();
-		//testSplitter();
+		testJoiner();
+		testSplitter();
 		testCharMatcher();
 		//Ints.asList(1,2,3,4,5,6);
 	}
